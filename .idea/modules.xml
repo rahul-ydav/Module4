@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Backtracking1/Backtracking1.iml" filepath="$PROJECT_DIR$/Backtracking1/Backtracking1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backtracking2/Backtracking2.iml" filepath="$PROJECT_DIR$/Backtracking2/Backtracking2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP-2/DP-2.iml" filepath="$PROJECT_DIR$/DP-2/DP-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP-4/DP-4.iml" filepath="$PROJECT_DIR$/DP-4/DP-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP-6/DP-6.iml" filepath="$PROJECT_DIR$/DP-6/DP-6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP1/DP1.iml" filepath="$PROJECT_DIR$/DP1/DP1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP3/DP3.iml" filepath="$PROJECT_DIR$/DP3/DP3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph-1/Graph-1.iml" filepath="$PROJECT_DIR$/Graph-1/Graph-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph-2/Graph-2.iml" filepath="$PROJECT_DIR$/Graph-2/Graph-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph-3/Graph-3.iml" filepath="$PROJECT_DIR$/Graph-3/Graph-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph-4/Graph-4.iml" filepath="$PROJECT_DIR$/Graph-4/Graph-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graph-5/Graph-5.iml" filepath="$PROJECT_DIR$/Graph-5/Graph-5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Module4.iml" filepath="$PROJECT_DIR$/.idea/Module4.iml" />
+    </modules>
+  </component>
+</project>
