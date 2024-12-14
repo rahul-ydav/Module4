@@ -11,17 +11,26 @@ public class Main {
 //        AllUniquePermutations pr = new AllUniquePermutations();
 //        ArrayList<ArrayList<Integer>> resp = pr.permute(A);
 
-        ArrayList<ArrayList<Integer>> B = new ArrayList<>();
+//        ArrayList<ArrayList<Integer>> B = new ArrayList<>();
 //        B.add(0, new ArrayList<>(List.of(1, 0, 0, 0)));
 //        B.add(1, new ArrayList<>(List.of(0, 0, 0, 0)));
 //        B.add(2, new ArrayList<>(List.of(0, 0, 2, -1)));
 
-        B.add(0, new ArrayList<>(List.of(0, 1)));
-        B.add(1, new ArrayList<>(List.of(2, 0)));
+//        B.add(0, new ArrayList<>(List.of(0, 1)));
+//        B.add(1, new ArrayList<>(List.of(2, 0)));
+//
+//        UniquePathsIII up = new UniquePathsIII();
+//        int resp = up.solve(B);
+//        System.out.println("final ans::::");
+//        System.out.println(resp);
 
-        UniquePathsIII up = new UniquePathsIII();
-        int resp = up.solve(B);
-        System.out.println("final ans::::");
-        System.out.println(resp);
+        ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1,2,3));
+
+        Permutations2 p = new Permutations2();
+        ArrayList<ArrayList<Integer>> res = p.permute(A);
+        for(ArrayList<Integer> ar :res){
+            System.out.println(ar.toString());
+        }
+        System.out.println("total permutes:: "+ res.size());
     }
 }

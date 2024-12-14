@@ -2,6 +2,7 @@ import java.sql.Array;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class Permutations {
@@ -13,10 +14,13 @@ public class Permutations {
     }
 
     public void findPermutes(List<Integer> A, int idx){
-
+        HashSet<Integer> hs = new HashSet<>();
         for(int i=idx; i<A.size(); i++){
-            System.out.println("A:: "+ A);
-            findPermutes(A, idx+1);
+            System.out.println("idx: "+idx +", i: "+i+", currA: "+A.toString());
+            if(!hs.contains(A.get(idx))) {
+                hs.add(A.get(idx));
+                findPermutes(A, idx + 1);
+            }
             rotateSubArrayBy1(A, idx);
         }
 
@@ -25,16 +29,6 @@ public class Permutations {
     }
 
     public void rotateSubArrayBy1(List<Integer> A, int idx){
-
-//        int previousVal = A.get(idx);
-//
-//        for(int i=idx+1; i<A.size(); i++){
-//            int temp = A.get(i);
-//            A.set(i, previousVal);
-//            previousVal = temp;
-//        }
-//        A.set(idx, previousVal);
-
         int firstVal = A.get(idx);
         for(int i= idx+1; i<A.size(); i++){
             A.set(i-1, A.get(i));
