@@ -46,7 +46,10 @@ public class DAGDirected {
 
             visited[currNode] = 1;
 
-            if(edges.get(currNode)==null)  return false;
+            if(edges.get(currNode)==null){
+                visited[currNode] = 0;
+                return false;
+            }
             for(Integer node : edges.get(currNode)){
                 if(findCycle(node))    return true;
             }

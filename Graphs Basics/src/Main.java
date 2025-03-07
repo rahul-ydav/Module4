@@ -1,10 +1,12 @@
 import Cycles.DAGDirected;
 import Cycles.UndirectedAG;
+import TopologicalSort.CourseSchedule;
 import Traversal.BFSIterative;
 import Traversal.DFSIterative;
 import Traversal.Grid4Dir;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -58,15 +60,23 @@ public class Main {
 //        boolean res = dagd.isCyclic(5, edges);
 //        System.out.println("dagd res: "+res);
 
-        int[][] edges = {
-                {0, 1},
-                {2, 0},
-                {0, 3},
-                {2, 3}
-        };
+//        int[][] edges = {
+//                {0, 1},
+//                {2, 0},
+//                {0, 3},
+//                {2, 3}
+//        };
+//
+//        UndirectedAG uag = new UndirectedAG();
+//        boolean res = uag.isCyclic(4, edges);
+//        System.out.println("uag res: "+res);
 
-        UndirectedAG uag = new UndirectedAG();
-        boolean res = uag.isCyclic(4, edges);
-        System.out.println("uag res: "+res);
+
+        int[][] edges = {{1,0},{2,0},{3,1},{3,2}};
+        CourseSchedule cs = new CourseSchedule();
+        int[] res = cs.findOrder(4, edges);
+
+        System.out.println("cs: "+ Arrays.toString(res));
+
     }
 }
